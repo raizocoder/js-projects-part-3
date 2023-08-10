@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="shortcut icon" href="flag-checkered-solid.svg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="country.css" />
+    <script src="country.js" defer></script>
+    <title>Country details</title>
+  </head>
+  <body>
+    <header class="header-container">
+      <div class="header-content">
+        <a href="index.html" class="globe"
+          >Countries Flag <i class="fa-solid fa-flag-checkered"></i></a>
+        <h2>Where in the world <i class="fa-solid fa-globe"></i> ?</h2>
+        <button class="drk-light-btn" class="darkon"><i class="fa-regular fa-moon"></i> Dark Mode</button>
+      </div>
+    </header>
+    <main>
+      <div class="country-container">
+        <!-- <a class="Home-btn" href="index.html"
+          ><i class="fa-solid fa-house"></i> Home</a
+        > -->
+        <button class="back-btn" onclick="history.back()">
+          <i class="fa-solid fa-arrow-left"></i> Back
+        </button>
+        <div class="country-details">
+          <img alt="" />
+          <div class="country-content">
+            <h2 class="card-title"></h2>
+            <p><b>Native name: </b><span class="native-name"></span></p>
+            <p><b>Capital: </b><span class="capital"></span></p>
+            <p><b>Population: </b><span class="populationNo"></span></p>
+            <p><b>Region: </b><span class="regionn"></span></p>
+            <p><b>Subregion: </b><span class="Subregion"></span></p>
+            <p><b>Top Level Domain: </b><span class="topleveldomain"></span></p>
+            <p><b>Currency: </b><span class="Currency"></span></p>
+            <p><b>Language: </b><span class="Languages"></span></p>
+          </div>
+          <a class="map" target="_blank"
+            >View <i class="fa-sharp fa-solid fa-eye"></i
+          ></a>
+        </div>
+        <div class="border-countries">
+          <p><b>Border Counrtries:</b></p>
+          <!-- <a href="#">France</a>
+      <a href="#">France</a>
+      <a href="#">France</a> -->
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
